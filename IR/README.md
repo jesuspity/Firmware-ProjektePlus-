@@ -26,11 +26,12 @@ https://raw.githubusercontent.com/jesuspity/Firmware-ProjektePlus-/main/IR/tasmo
 - MQTT com TLS (porta 8883).
 - Tasmota Discovery e Rules.
 - Sem senhas. Os nomes das redes Wi-Fi de referência (SSID) continuam no código; as senhas não.
+- Padrões de fábrica: `STORE_ID` = `LojaXXX`, `DEVICE_ID` = `XXXX_GWXX_XXXX` e grupo `EMPRESA_ID` = `Disp_Sem_Config`. Valem para dispositivo novo ou depois de `Reset 1`; um OTA não altera a configuração já gravada.
 
 SHA-256 de `tasmota-ir.bin.gz`:
 
 ```
-9a4d961d6baf8ba3b2f09c3c94c4d0a50a415eabbb2abb33bb9a1e60b29031c2
+0d62ffe8eff25cf85ecf11ccbd7bf577d886f507559c5c25a49f8c1582753d97
 ```
 
 ## Primeira instalação (serial)
