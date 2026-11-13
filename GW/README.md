@@ -24,14 +24,15 @@ O firmware já vem com esse endereço como `OtaUrl` padrão.
 ## Versão atual: 0.2.1
 
 - Código igual à v0.2: correção do erro `ZbState Code 81` (tarefa de recepção Zigbee `ZbRx`). Detalhes em [CHANGELOG.md](CHANGELOG.md).
-- Só muda o endereço OTA padrão e a versão do firmware.
+- Só muda o endereço OTA padrão, a versão do firmware e os padrões de fábrica abaixo.
+- Padrões de fábrica, válidos para dispositivo novo ou após reset (um dispositivo já configurado mantém os seus): `STORE_ID` = `LojaXXX`; `DEVICE_ID` = `XXXX_GWXX_XXXX`, usado como Topic, DeviceName e FriendlyName; `EMPRESA_ID` = `Disp_Sem_Config`, usado no FullTopic (`Disp_Sem_Config/LojaXXX/%topic%/%prefix%/`) e no GroupTopic2.
 - O endereço do broker MQTT (`mqtt.projekteplus.com`) continua como padrão. Usuário e senha não.
 - Ambiente de compilação: `tasmota32-projekte-gw-publico`.
 
 SHA-256 de `tasmota32-projekte-gw.bin`:
 
 ```
-59c039011bf362f78608802f1509143a6360bb5b03b3fe3a720cf5b64fe36468
+c3a0fdfe717bd6423f2c6befe247b34bdd58f72d3bfb0eff446821583d2cbcc8
 ```
 
 ## Atualização OTA

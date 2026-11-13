@@ -1,9 +1,10 @@
 # Changelog — Firmware GW
 
-## 0.2.1 (2026-11-12)
+## 0.2.1 (2026-11-12, recompilado em 2026-11-13)
 
 - Link OTA fixo: `GW/tasmota32-projekte-gw.bin` neste repositório.
-- Mesmo código da v0.2. Muda só o `OTA_URL` padrão e a versão (`16.0.0(Projekte+ GW v0.2.1)`).
+- Mesmo código da v0.2. Muda o `OTA_URL` padrão, a versão (`16.0.0(Projekte+ GW v0.2.1)`) e os padrões de fábrica abaixo.
+- Padrões de fábrica, válidos para dispositivo novo ou após reset: `STORE_ID` = `LojaXXX`, `DEVICE_ID` = `XXXX_GWXX_XXXX` (Topic, DeviceName e FriendlyName) e `EMPRESA_ID` = `Disp_Sem_Config` (FullTopic `Disp_Sem_Config/LojaXXX/%topic%/%prefix%/` e GroupTopic2).
 - Build público: sem senhas de Wi-Fi nem de MQTT.
 
 ## 0.2 (2026-11-05)
